@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/tachyons.min.css">
+    <title>Vigenere Cypher</title>
+</head>
+<body class="w-80 center sans-serif">
+    <header>
+        <h1> <span class="bg-blue light-gray pa2">Vigenere Cypher</span></h1>
+    </header>
+    <main>
+        <p class="mb3">The Vigenère cipher is a method of encrypting alphabetic text by using a series of interwoven Caesar ciphers, based on the letters of a keyword. It employs a form of polyalphabetic substitution.</p>
+
+        <div class="form">
+            <div class="mb3">
+                <label class="db mb1 f6 fw6" for="string">Plaintext:</label>
+                <textarea class="input-reset pa2 ba br1" type="text" name="string" id="string" cols="20" rows="5"></textarea>
+            </div>
+            <div class="mb3">
+                <label class="db mb1 f6 fw6" for="key">Key:</label>
+                <input class="input-reset pa2 ba br1" type="text" name="key" id="key">
+            </div>
+            <div class="mb3">
+                <a class="f6 link dim ba br1 ph3 pv2 bg-blue light-gray" id="btn-encrypt" href="#0"> Encrypt </a>
+            </div>
+            <div class="mb3">
+                <label class="db mb1 f6 fw6" for="encryptedString">Encrypted String:</label>
+                <textarea class="input-reset pa2 ba br1" type="text" name="encryptedString" id="encryptedString" cols="20" rows="5"></textarea>
+            </div>
+            <div class="mb3">
+                <a class="f6 link dim ba br1 ph3 pv2 bg-blue light-gray" id="btn-decrypt" href="#0"> Decrypt </a>
+            </div>
+        </div>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
